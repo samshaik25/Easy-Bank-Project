@@ -94,6 +94,7 @@
   }
 
   @media only screen and (max-width:900px){
+  
     .hamburger{
       display: flex;
       justify-content: center;
@@ -144,7 +145,7 @@
       .navbar-links.active {
         display: flex;  
         justify-content: center;
-
+        box-shadow: 100px 30px 150px 90px hsl(233, 26%, 24%);
       }
   
       .next-generation{
@@ -186,16 +187,11 @@
         color: var(--Grayish-Blue);
         width:85vw;
         margin-left: 5vw;
-        /* margin-right: 3vw; */
+
         line-height: 1.7;
     }
-    .butclass{
-      margin-top: 2vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    button{
+   .generation-text button{
+      margin-left: 25vw;
       background-image: linear-gradient(
         120deg,
         hsl(192, 70%, 51%),
@@ -373,6 +369,7 @@
   .btn-copy{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     gap: 1vh;
   }
   .btn-copy button{
@@ -400,10 +397,276 @@
 
   }
   
-  @media only screen and (min-width:900px)
+
+@media only screen and (min-width: 900px)
+{
+
+  .next-generation{
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--Very-Light-Gray);
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+
+    /* background-position: right -700px top -170px; */
+    /* background-size: 100vw; */
+    background-position: right -450px top -140px;
+    background-size: 100vw;
+  }
+  .generation-img{
+    width: 50vw;
+    height: 130vh;
+    overflow: hidden;
+
+  }
+  .genimg{
+    width:110%;
+    /* height: 100vh; */
+    position: relative;
+    top:250px;
+    left:35px;
+    /* right: 50px; */
+  }
+     .generation-text{
+       width: 50vw;
+       display: flex;
+       flex-direction: column;
+       gap:3vh;
+       padding-left: 12vw
+     }
+     .generation-text h1{
+       width:100%;
+       padding-top: 7vh;
+       color: var(--Dark-Blue);
+       font-size: 2.5rem;
+       font-weight: 400;
+     }
+     .generation-text p{
+        width:90%;
+       font-size: 1rem;
+       color: var(--Grayish-Blue);
+       line-height: 1.7;
+   }
+
+   .generation-text  button{
+     width:45%;
+     background-image: linear-gradient(
+       120deg,
+       hsl(192, 70%, 51%),
+       hsl(136, 65%, 51%)
+     );
+     border: none;
+     color: var(--White);
+    border-radius: 24px; 
+     padding:1.7vh 1vw;
+     margin-top:2vh;
+     font-size: 0.81rem;
+     font-weight: 400;
+   }
+   .generation-text button:hover{
+     filter: brightness(120%);
+   }
+  .why{
+    padding-left: 12vw;
+    background-color: var(--Light-Grayish-Blue);
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    padding-right: 11vh;
+
+  }
+
+  .why-head h1{
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    margin-bottom: 2vh;
+
+    
+  }
+ .why-head p{
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1rem;
+  width: 55%;
+ }
+ .banking{
+  display: flex;
+  margin-top: 8vh;
+  gap:5vh;
+}
+.images h1{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--Dark-Blue);
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.images p{
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+  font-size: 0.9rem;
+
+  line-height: 1.7;
+}
+
+
+
+.articles{
+background-color: var(--Very-Light-Gray);   
+padding-left: 11vw;
+padding-top: 10vh;
+padding-right: 10vh;
+/* padding-bottom: 12vh; */
+width: 100vw;
+}
+
+.article-heading{
+font-size: 2.2rem;
+font-weight: 400;
+color: var(--Dark-Blue);
+}
+
+.article-all{
+margin-top: 6vh;
+display: flex;
+padding-bottom: 10vh;
+gap:3vh;
+}
+.article-info{
+display: flex;
+flex-direction: column;
+background-color: var(--White);
+border-radius: 10px;
+gap:1vh
+}
+.article-info img{
+width:100%;
+height: 50%;
+border-radius: 5px 5px 0 0;
+margin-bottom: 2.3vh;
+}
+.article-info h6{
+color: var(--Grayish-Blue);
+margin-left:1.5vw;
+margin-bottom: 1vh;
+font-size: 0.6rem;
+}
+
+.article-info  h1{
+color: var(--Dark-Blue);
+font-size: 1rem;
+font-weight: 400;
+margin-left:1.5vw;
+margin-right: 2vw;
+}
+.article-info h1:hover{
+color: var(--Lime-Green);
+}
+
+.article-info p{
+color: var(--Grayish-Blue);
+margin-left:1.5vw;
+margin-right: 2vw;
+margin-bottom: 3vh;
+font-size:0.8rem ;
+line-height: 2.2vh;
+}
+
+.social-media{
+background-color: var(--Dark-Blue);
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap:3vh;
+padding: 6vh;
+
+}
+.logo-icons{
+display: flex;
+flex-direction: column;
+padding-left: 5vw;
+gap:5vh;
+}
+.social-icons{
+display: flex;
+gap:1.8vh
+}
+.icons:hover{
+fill: var(--Lime-Green);
+}
+.info{
+list-style: none;
+display: flex;
+width:30%;
+justify-content: space-around;
+margin-right:5vw
+}
+.info li a{
+font-size: 0.9rem;
+text-decoration: none;
+color: var(--White);
+}
+.col-1
+{
+display: flex;
+flex-direction: column;
+gap:1.5vh;
+}
+.col-2{
+display: flex;
+flex-direction: column;
+gap:1.5vh;
+
+}
+
+.col-1 li a:hover{
+color: var(--Lime-Green);
+}
+.col-2 li a:hover{
+color: var(--Lime-Green);
+}
+.btn-copy{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align:right ;
+gap:5vh;
+
+}
+.btn-copy button{
+width:70%;
+font-size: 0.8rem;
+background-image: linear-gradient(
+120deg,
+hsl(192, 70%, 51%),
+hsl(136, 65%, 51%)
+);
+border:none;
+color: var(--White);
+border-radius: 24px;
+padding:1.5vh 1.5vw;
+align-self: center;
+}
+.btn-copy button:hover{
+filter: brightness(120%);
+}
+.copyright{
+color: var(--Grayish-Blue);
+font-size: 0.9rem;
+}
+
+}
+
+
+
+  @media only screen and (min-width:1200px)
   {
 
      .next-generation{
+       height: 75vh;
        display: flex;
        flex-direction: row-reverse;
        align-items: center;
@@ -412,66 +675,66 @@
        background-repeat: no-repeat;
 
        /* background-position: right -700px top -170px; */
-       background-size: 100vw;
+       /* background-size: 100vw; */
        background-position: right -350px top -180px;
        background-size: 80vw;
-       height: 75vh;
      }
      .generation-img{
-       width: 100vw;
-       height: 130vh;
-       overflow: hidden;
+      width: 100%;
+      height: 130vh;
+      overflow: hidden;
 
+    }
+    .genimg{
+      width:100%;
+      /* height: 100vh; */
+      position: relative;
+      top:200px;
+      left:110px;
+    }
+       .generation-text{
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+         gap:3vh;
+         padding-left: 12vw
+       }
+       .generation-text h1{
+         width:30vw;
+         padding-top: 7vh;
+         color: var(--Dark-Blue);
+         font-size: 2.8rem;
+         font-weight: 400;
+       }
+       .generation-text p{
+          width:30vw;
+         font-size: 1rem;
+         color: var(--Grayish-Blue);
+         line-height: 1.7;
      }
-     .genimg{
-       width:100%;
-       position: relative;
-       top:210px;
-       left:110px;
-     }
-        .generation-text{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          gap:3vh;
-          padding-left: 12vw
-        }
-        .generation-text h1{
-          width:64%;
-          padding-top: 7vh;
-          color: var(--Dark-Blue);
-          font-size: 2.8rem;
-          font-weight: 400;
-        }
-        .generation-text p{
-           width:75%;
-          font-size: 1rem;
-          color: var(--Grayish-Blue);
-          line-height: 1.7;
-      }
 
-      .generation-text  button{
-        width:30%;
-        background-image: linear-gradient(
-          120deg,
-          hsl(192, 70%, 51%),
-          hsl(136, 65%, 51%)
-        );
-        border: none;
-        color: var(--White);
-       border-radius: 24px; 
-        padding:1.7vh 1vw;
-        margin-top:2vh;
-        font-size: 0.81rem;
-        font-weight: 400;
-      }
-      .generation-text button:hover{
-        filter: brightness(120%);
-      }
+     .generation-text  button{
+       width:30%;
+       background-image: linear-gradient(
+         120deg,
+         hsl(192, 70%, 51%),
+         hsl(136, 65%, 51%)
+       );
+       border: none;
+       color: var(--White);
+      border-radius: 24px; 
+       padding:1.7vh 1vw;
+       margin-top:2vh;
+       font-size: 0.81rem;
+       font-weight: 400;
+     }
+     .generation-text button:hover{
+       filter: brightness(120%);
+     }
       .why{
         padding-left: 12vw;
         background-color: var(--Light-Grayish-Blue);
-        padding-top: 10vh;
+        padding-top: 12vh;
         padding-bottom: 12vh;
         padding-right: 11vh;
 
