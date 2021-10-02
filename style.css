@@ -49,7 +49,28 @@
     .navbar-links li a{
         text-decoration: none;
       color: var(--Grayish-Blue);
+      position: relative;
     }
+    .navbar-links li a::after{
+        content: "";
+          position: absolute;
+        
+      background: linear-gradient(120deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+      left: 0;
+      top: 48px;
+      height: 4px;
+      width: 0;
+        /* bottom: -10px; */
+  
+      }
+      .navbar-links  li a:hover{
+        color: black;
+      }
+  
+     .navbar-links  li a:hover::after{
+        width:100%
+      }
+        
 
   .req-btn1{
     padding: 14px 30px;
@@ -63,6 +84,10 @@
         hsl(136, 65%, 51%)
       );
   }
+  .req-btn1:hover {
+    filter: brightness(120%);
+  }
+
   .hamburger{
     display: none;
    
@@ -377,7 +402,7 @@
   
   @media only screen and (min-width:900px)
   {
-      
+
      .next-generation{
        display: flex;
        flex-direction: row-reverse;
@@ -439,6 +464,9 @@
         margin-top:2vh;
         font-size: 0.81rem;
         font-weight: 400;
+      }
+      .generation-text button:hover{
+        filter: brightness(120%);
       }
       .why{
         padding-left: 12vw;
@@ -534,6 +562,9 @@
   margin-left:1.5vw;
   margin-right: 2vw;
 }
+.article-info h1:hover{
+  color: var(--Lime-Green);
+}
 
 .article-info p{
   color: var(--Grayish-Blue);
@@ -563,6 +594,9 @@
   display: flex;
   gap:1.8vh
 }
+.icons:hover{
+  fill: var(--Lime-Green);
+}
 .info{
   list-style: none;
   display: flex;
@@ -588,7 +622,12 @@
 
 }
 
-
+.col-1 li a:hover{
+  color: var(--Lime-Green);
+}
+.col-2 li a:hover{
+  color: var(--Lime-Green);
+}
 .btn-copy{
   display: flex;
   flex-direction: column;
@@ -610,6 +649,9 @@
   border-radius: 24px;
   padding:1.5vh 1.5vw;
   align-self: center;
+}
+.btn-copy button:hover{
+  filter: brightness(120%);
 }
 .copyright{
   color: var(--Grayish-Blue);
