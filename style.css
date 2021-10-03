@@ -937,20 +937,23 @@ font-size: 0.9rem;
 
        /* background-position: right -700px top -170px; */
        /* background-size: 100vw; */
-       background-position: right -350px top -180px;
+       background-position: right -500px top -180px;
        background-size: 80vw;
      }
      .generation-img{
-      width: 100%;
+      width: 120%;
       height: 135vh;
       overflow: hidden;
 
     }
     .genimg{
-      width:90%;
+      width:88%;
       /* height: 100vh; */
       position: relative;
-      top:230px;
-      left:190px;
+      top:210px;
+      left:200px;
+    }
+    .generation-text  button{
+      width:25%;
     }
   }
